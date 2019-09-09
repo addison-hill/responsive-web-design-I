@@ -208,4 +208,60 @@ footer {
   font-size: 14px;
 }
 
+/***************** Media Queries ***************/
+@media screen and (max-width: 800px) {
+    body {
+        width: 100%
+    }
+
+    header {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .logo {
+        justify-content: center;
+        width: 30%;
+        align-items: center;
+    }
+
+
+    .cta {
+        justify-content: center;
+    }
+
+    .cta .cta-text {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        vertical-align: top;
+        font-size: 77px;
+        margin-top: 120px;
+        text-align: center;
+        padding: 0px 75px;
+    }
+
+    .cta .top-pic {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        width: 100%;
+    }
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav a {
+        padding: 5% 20%;
+        border-bottom: 1px solid grey;
+        
+    }
+}
 
