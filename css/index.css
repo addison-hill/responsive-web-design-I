@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
     vertical-align: baseline;
-    border: 1px solid grey;
+    /*border: 1px solid grey;*/
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -256,12 +256,42 @@ footer {
     header nav {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
 
     header nav a {
         padding: 5% 20%;
         border-bottom: 1px solid grey;
+        font-size: 25px;
         
+    }
+
+    .main-content .top-content {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .main-content .top-content .text-content {
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .main-content .bottom-content {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .main-content .bottom-content .text-content {
+        padding-bottom: 20px;
+        width: 100%;
+    }
+
+    header nav a {
+        margin-right: 0px;
     }
 }
 
